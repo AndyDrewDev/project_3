@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru/en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter Products | Flexbox 3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <aside>
+      <div class="collapsed_filters filter_group">
+        <div class="filter-box" onclick="showHide(this)">
+          <div class="list-title">Collapsed filters</div>
+          <img class="chevron" src="images/chevron-down.svg" alt="" />
+        </div>
+        <div class="list-filters">
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Checkbox 1</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Checkbox 2</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Checkbox 3</label
+          >
+        </div>
+      </div>
+      <div class="expanded_filters filter_group">
+        <div class="filter-box" onclick="showHide(this)">
+          <div class="list-title">Expanded Filters</div>
+          <img class="chevron" src="images/chevron-down.svg" alt="" />
+        </div>
+        <div class="list-filters">
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Recommended</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Recently Added</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Most Rated</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Price: Low → High</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            Price: High → Low
+          </label>
+        </div>
+      </div>
+      <div class="year_filters filter_group">
+        <div class="filter-box" onclick="showHide(this)">
+          <div class="list-title">Year of manufacturing</div>
+          <img class="chevron" src="images/chevron-down.svg" alt="" />
+        </div>
+        <div class="list-filters">
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            2000</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            2010</label
+          >
+          <label>
+            <input type="checkbox" />
+            <div class="checkbox-icon">&nbsp;</div>
+            2011-2020
+          </label>
+        </div>
+      </div>
+    </aside>
+    <main class="container">
+      <div class="cards_wrapper">
+        <div class="sorting_buttons">
+          <div class="left_group">
+            <button class="sorting" type="button">Condition</button>
+            <button class="sorting" type="button">Delivery options</button>
+          </div>
+          <div class="right_group">
+            <div class="radio_group">
+              <label
+                ><input class="radio_input" type="radio" name="type" /><span
+                  >Show all</span
+                ></label
+              >
+              <label
+                ><input
+                  class="radio_input"
+                  checked
+                  type="radio"
+                  name="type"
+                /><span>Auction</span>
+              </label>
+              <label
+                ><input class="radio_input" type="radio" name="type" /><span
+                  >Buy now</span
+                ></label
+              >
+            </div>
+            <div class="radio_group">
+              <label
+                ><input class="radio_input" type="radio" name="grid" />
+
+                <svg
+                  class="icon_list"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 28 28"
+                  fill="#787885"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 7V11H22V7H10ZM10 21H22V17H10V21ZM10 16H22V12H10V16ZM5 11H9V7H5V11ZM5 21H9V17H5V21ZM5 16H9V12H5V16Z"
+                  /></svg
+              ></label>
+
+              <label
+                ><input class="radio_input" type="radio" name="grid" checked />
+
+                <svg
+                  class="icon_list"
+                  width="28"
+                  height="28"
+                  fill="#787885"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13h8V5H5v8zm0 10h8v-8H5v8zm10 0h8v-8h-8v8zm0-18v8h8V5"
+                  />
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card1.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card2.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card3.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card4.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card4.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card4.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card4.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card_description">
+              <img class="card_img" src="images/card4.png" alt="" />
+              <div class="description">
+                Vintage Typewriter to post awesome stories about UI design and
+                webdev.
+              </div>
+            </div>
+            <div class="card_info">
+              <div class="card_price">$49.50</div>
+              <p class="stock_info">
+                Eligible for Shipping To Mars or somewhere else.
+              </p>
+              <div class="card_actions">
+                <div class="rating">
+                  <img class="stars" src="images/rating_4.svg" alt="" />
+                  <div class="digital_rating">4.5</div>
+                </div>
+                <button class="button_watch" type="button">
+                  <img src="images/heart.svg" alt="" />Watch
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="promo_container">
+        <div class="promo">
+          <img
+            class="icon_promo"
+            src="images/lightbulb-on-outline.svg"
+            alt=""
+          />
+          <h2 class="promo_title">Clear & Usable user flows</h2>
+          <div class="promo_description">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="promo">
+          <img class="icon_promo" src="images/auto-fix.svg" alt="" />
+          <h2 class="promo_title">Fine & Styled components</h2>
+          <div class="promo_description">Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="promo">
+          <img class="icon_promo" src="images/palette.svg" alt="" />
+          <h2 class="promo_title">Customizable & Reusable</h2>
+          <div class="promo_description">Lorem ipsum dolor sit amet.</div>
+        </div>
+      </div>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>
